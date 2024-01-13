@@ -10,8 +10,5 @@
 
   - name: install git
     apt: 
-        name: gitc
+        name: git
         state: present 
-
-
-  
