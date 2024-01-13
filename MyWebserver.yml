@@ -11,4 +11,4 @@
   - name: i want to start webserver
     service: 
         name: apache2
-        state: start
+        state: started
