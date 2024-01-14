@@ -1,4 +1,4 @@
 ---
-variable: vars
+variable: value
 mywebpackonubuntu: apache2
 myjdk11konubuntu: openjdk-11-jdk
