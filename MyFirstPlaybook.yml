@@ -8,12 +8,7 @@
         name: "{{mytreeserver}}"
         state: present
 
-  - name: i want to start ubuntu/tree server
-    service: 
-         name: "{{mytreeserver}}"     
-         state: started
-
-
+  
 
 
   - name: install git on ubuntu server
@@ -21,21 +16,14 @@
         name: "{{mygitserver}}"
         state: present 
 
-  - name: i want to start ubuntu/git server
-    service: 
-         name: "{{mygitserver}}"     
-         state: started
+  
 
 
 
-         
 
   - name: install wget on ubuntu server
     apt: 
         name: "{{mywgetserver}}"
         state: present
 
-  - name: i want to start ubuntu/wget server
-    service: 
-         name: "{{mywgetserver}}"     
-         state: started
+  
