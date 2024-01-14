@@ -1,6 +1,6 @@
 ---
 - hosts: mywebservers
-  become: all
+  become: yes
 
   tasks:
   - name: install git on ubuntu server
