@@ -5,7 +5,7 @@
 
 [mywebservers: var]
 variable:value
-mytreeserver=git
+mytreeserver=tree
 
 
 [mywebservers: var]
