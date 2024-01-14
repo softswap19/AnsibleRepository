@@ -4,7 +4,7 @@
 
 
 [mywberserver:vars]
-variable: value
-mygitserver: git
-mywgetserver: wget
-mytreeserver: tree
+variable= value
+mygitserver= git
+mywgetserver= wget
+mytreeserver= tree
