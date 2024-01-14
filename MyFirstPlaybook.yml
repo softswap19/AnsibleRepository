@@ -8,14 +8,34 @@
         name: "{{mygitserver}}"
         state: present
 
+   - name: start git on ubuntu server
+     service: 
+        name: "{{mygitserver}}"
+        state: started
+
+
+
    - name: install wget on ubuntu server
      apt: 
         name: "{{mywgetserver}}"
         state: present
 
+   - name: start wget on ubuntu server
+     service: 
+        name: "{{mywgetserver}}"
+        state: started     
+
+
+
    - name: install tree on ubuntu server
      apt: 
         name: "{{mytreeserver}}"
         state: present
+
+
+   - name: start tree on ubuntu server
+     service: 
+        name: "{{mytreeserver}}"
+        state: started     
 
   
