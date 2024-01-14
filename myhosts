@@ -1,9 +1,4 @@
-[mywebservers]
+
 172.31.39.94
 172.31.43.63
-
-
-[mywebservers: vars]
-variable:value
-mygitserver=git
 
