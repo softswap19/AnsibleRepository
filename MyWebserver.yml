@@ -17,7 +17,7 @@
     when: ansible_os_family=="Debian"
 
   - name: i want to install jdk 11 on unbuntu server
-    service: 
+    apt: 
         name: "{{myjdk11konubuntu}}"
         state: started
     when: ansible_os_family=="Debian"
