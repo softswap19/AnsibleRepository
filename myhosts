@@ -1,3 +1,9 @@
 [mywebservers]
 172.31.39.94
 172.31.43.63
+
+
+[mywebservers: var]
+variable:value
+mygitserver=git
+mywgetserver=wget
