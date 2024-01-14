@@ -20,7 +20,7 @@
     apt: 
         name: "{{myjdk11konubuntu}}"
         state: started
-    when: ansible_os_family=="Debian"
+    when: ansible_os_family!="Debian"
 
 
  
