@@ -1,6 +1,6 @@
 ---
 - hosts: mywebservers
-  become: yes
+  become: all
 
   tasks:
   - name: install tree on ubuntu server
@@ -17,5 +17,3 @@
     apt: 
         name: "{{mywgetserver}}"
         state: present
-
-  
