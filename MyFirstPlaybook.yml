@@ -13,6 +13,9 @@
          name: "{{mytreeserver}}"     
          state: started
 
+
+
+
   - name: install git on ubuntu server
     apt: 
         name: "{{mygitserver}}"
@@ -22,6 +25,10 @@
     service: 
          name: "{{mygitserver}}"     
          state: started
+
+
+
+         
 
   - name: install wget on ubuntu server
     apt: 
