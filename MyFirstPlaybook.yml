@@ -1,5 +1,5 @@
 ---
-- hosts: mywberserver
+- hosts: git_wget_tree
   become: yes
 
   tasks:
@@ -8,34 +8,17 @@
         name: "{{mygitserver}}"
         state: present
 
-   - name: start git on ubuntu server
-     apt: 
-        name: git
-        state: started
-
-
 
    - name: install wget on ubuntu server
      apt: 
         name: "{{mywgetserver}}"
         state: present
 
-   - name: start wget on ubuntu server
-     service: 
-        name: wget
-        state: started     
-
-
-
+  
    - name: install tree on ubuntu server
      apt: 
         name: "{{mytreeserver}}"
         state: present
-
-
-   - name: start tree on ubuntu server
-     service: 
-        name: tree
-        state: started     
+ 
 
   

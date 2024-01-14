@@ -1,10 +1,18 @@
-[mywberserver]
+[mywberservers]
 172.31.39.94
 172.31.43.63
 
+[git_wget_tree]
+172.31.39.94
+172.31.43.63
 
-[mywberserver:vars]
+[git_wget_tree:vars]
+variable=value
+mygitserver=git
+mytreeserver=tree
+mywgetserver=wget
+
+[mywberservers:vars]
 variable= value
-mygitserver= git
-mywgetserver= wget
-mytreeserver= tree
+mywebpackonubuntu= apache2 
+
