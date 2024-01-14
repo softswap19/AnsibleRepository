@@ -1,5 +1,5 @@
 ---
-- hosts: mywebservers
+- hosts: mywebserver
   become: yes
 
   tasks:
@@ -13,5 +13,12 @@
   - name: i want to start webserver
     service: 
         name: "{{mywebpackonubuntu}}"
+        state: started
+    when: ansible_os_family!="Debian"
+
+
+  - name: i want to install jdk 11 on unbuntu server
+    service: 
+        name: "{{myjdk11konubuntu}}"
         state: started
     when: ansible_os_family!="Debian"
