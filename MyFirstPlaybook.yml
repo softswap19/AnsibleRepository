@@ -8,19 +8,11 @@
         name: "{{mytreeserver}}"
         state: present
 
-  
-
-
   - name: install git on ubuntu server
     apt: 
         name: "{{mygitserver}}"
         state: present 
-
-  
-
-
-
-
+        
   - name: install wget on ubuntu server
     apt: 
         name: "{{mywgetserver}}"
