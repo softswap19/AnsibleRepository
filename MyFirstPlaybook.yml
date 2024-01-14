@@ -9,7 +9,7 @@
         state: present
 
    - name: start git on ubuntu server
-     service: 
+     apt: 
         name: git
         state: started
 
