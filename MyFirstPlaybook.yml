@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: mywebservers
   become: yes
 
   tasks:
@@ -12,7 +12,7 @@
     apt: 
         name: "{{mygitserver}}"
         state: present 
-        
+
   - name: install wget on ubuntu server
     apt: 
         name: "{{mywgetserver}}"
