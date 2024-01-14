@@ -1,10 +1,21 @@
 ---
 - hosts: mywberserver
   become: yes
+
   tasks:
-  - name: install git on ubuntu server
-    apt: 
+   - name: install git on ubuntu server
+     apt: 
         name: git
-        state: present 
+        state: present
+
+   - name: install wget on ubuntu server
+     apt: 
+        name: wget
+        state: present
+
+   - name: install tree on ubuntu server
+     apt: 
+        name: tree
+        state: present
 
   
