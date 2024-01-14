@@ -18,11 +18,7 @@
 
 
 
-  - name: i want to install jdk 11 on unbuntu server
-    apt: 
-        name: "{{myjdkonubuntu}}"
-        state: present
-    when: ansible_os_family=="Debian"
+  
 
 
  
