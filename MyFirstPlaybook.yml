@@ -3,11 +3,6 @@
   become: all
 
   tasks:
-  - name: install tree on ubuntu server
-    apt: 
-        name: "{{mytreeserver}}"
-        state: present
-
   - name: install git on ubuntu server
     apt: 
         name: "{{mygitserver}}"
