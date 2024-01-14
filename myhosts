@@ -3,7 +3,7 @@
 172.31.43.63
 
 
-[mywebservers: var]
+[mywebservers: vars]
 variable:value
 mygitserver=git
-mywgetserver=wget
+
