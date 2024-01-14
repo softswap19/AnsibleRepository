@@ -8,10 +8,7 @@
         name: "{{mygitserver}}"
         state: present
 
-   - name: start git on ubuntu server
-     service: 
-        name: "{{mygitserver}}"
-        state: started
+   
 
 
 
