@@ -5,17 +5,17 @@
   tasks:
    - name: install git on ubuntu server
      apt: 
-        name: git
+        name: "{{mygitserver}}"
         state: present
 
    - name: install wget on ubuntu server
      apt: 
-        name: wget
+        name: "{{mywgetserver}}"
         state: present
 
    - name: install tree on ubuntu server
      apt: 
-        name: tree
+        name: "{{mytreeserver}}"
         state: present
 
   

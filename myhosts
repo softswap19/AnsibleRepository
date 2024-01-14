@@ -2,3 +2,9 @@
 172.31.39.94
 172.31.43.63
 
+
+[mywberserver:vars]
+variable: value
+mygitserver: git
+mywgetserver: wget
+mytreeserver: tree
