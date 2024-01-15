@@ -16,7 +16,6 @@
     service: 
         name: "{{mywebpackonubuntu}}"
         state: started
-    notify: restartwebserver
     when: ansible_os_family=="Debian"
 
   - name: i want to install java11 webserver
@@ -42,6 +41,7 @@
     template:
         src: Indexfile.j2
         dest: /var/www/html/index.html
+    notify: restartwebserver
 
     handlers:
      - name: restartwebserver
