@@ -3,8 +3,7 @@
   become: yes
   tasks:
    - include_tasks: MyWebserver.yml
-   
-
+  
    - name: install git on ubuntu server
      apt: 
         name: "{{mygitserver}}"
