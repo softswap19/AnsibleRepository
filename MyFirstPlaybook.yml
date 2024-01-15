@@ -1,5 +1,5 @@
 ---
-- hosts: mywebserver
+- hosts: git_wget_tree
   become: yes
   tasks:
    

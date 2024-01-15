@@ -1,7 +1,4 @@
 ---
 variable: value
-mygitserver: git
-mywgetserver: wget
-mytreeserver: tree
 mywebpackonubuntu: apache2
 myjdkonubuntu: openjdk-11-jdk

@@ -1,0 +1,5 @@
+---
+variable: value
+mygitserver: git
+mywgetserver: wget
+mytreeserver: tree
