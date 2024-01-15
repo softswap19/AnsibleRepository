@@ -35,7 +35,14 @@
         src: Indexfile.j2
         dest: /var/www/html/index.html
     
+  handlers:
+     - name: restartwebserver
+       service: 
+          name: "{{mywebpackonubuntu}}"
+          state: restarted
+       when: ansible_os_family=="Debian" 
     
+
   
 
 
