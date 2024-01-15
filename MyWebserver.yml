@@ -17,7 +17,7 @@
         force_basic_auth: yes
 
   - name: Copy dyno/dynamic file into node side
-    template:
+    templates:
         src: ansible_all_ipv4_addresses
         desc: /var/www/html/index.html
     
