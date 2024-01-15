@@ -10,7 +10,7 @@
 
    - name: i want to display myfirsttaskresult
      debug: 
-        meg: "{{myfirsttaskresult}}"  
+        msg: "{{myfirsttaskresult}}"  
         
    - name: install git on ubuntu server
      apt: 
