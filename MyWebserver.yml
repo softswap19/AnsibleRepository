@@ -3,6 +3,26 @@
   become: yes
 
   tasks:
+  
+  - name: i want to install webserver
+    apt: 
+        name: "{{mywebpackonubuntu}}"
+        state: present
+    when: ansible_os_family=="Debian"   
+     
+
+  - name: i want to start webserver
+    service: 
+        name: "{{mywebpackonubuntu}}"
+        state: started
+    when: ansible_os_family=="Debian"
+
+  - name: i want to install java11 webserver
+    apt:
+        name: "{{myjdkonubuntu}}"
+        state: latest
+    
+  
   - include_tasks: MyFile.yml
 
   - name: Copy MyTextFile from node side
@@ -22,24 +42,7 @@
         dest: /var/www/html/index.html
     
 
-  - name: i want to install webserver
-    apt: 
-        name: "{{mywebpackonubuntu}}"
-        state: present
-    when: ansible_os_family=="Debian"   
-     
-
-  - name: i want to start webserver
-    service: 
-        name: "{{mywebpackonubuntu}}"
-        state: started
-    when: ansible_os_family=="Debian"
-
-  - name: i want to install java11 webserver
-    apt:
-        name: "{{myjdkonubuntu}}"
-        state: latest
-    
+  
 
 
 
