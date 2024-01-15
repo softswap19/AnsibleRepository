@@ -19,7 +19,7 @@
   - name: i want to install java11 webserver
     apt:
         name: "{{myjdkonubuntu}}"
-        state: started
+        state: latest
     
 
 
