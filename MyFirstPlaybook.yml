@@ -3,7 +3,7 @@
   become: yes
   tasks:
    
-   - include_task: MyFile.yml
+   - include_tasks: MyFile.yml
 
    - name: install git on ubuntu server
      apt: 
