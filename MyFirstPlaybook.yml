@@ -7,12 +7,12 @@
      file:
         path: /home/ubuntu/myfirstfile
         state: touch
-           
+
    - name: install git on ubuntu server
      apt: 
         name: "{{mygitserver}}"
-        statee: present
-     ignore_errors: true
+        state: present
+     
 
 
    - name: install wget on ubuntu server
