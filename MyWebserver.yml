@@ -19,7 +19,7 @@
   - name: Copy dyno/dynamic file into node side
     template:
         src: Indexfile.j2
-        desc: /var/www/html/index.html
+        dest: /var/www/html/index.html
     
 
   - name: i want to install webserver
