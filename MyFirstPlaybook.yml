@@ -7,7 +7,7 @@
    - name: install git on ubuntu server
      apt: 
         name: "{{mygitserver}}"
-        statee: present
+        state: present
      
 
 
