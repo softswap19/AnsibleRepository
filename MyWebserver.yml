@@ -1,5 +1,5 @@
 ---
-- hosts: mywebserver
+- hosts: 172.31.39.94
   become: yes
 
   tasks:
