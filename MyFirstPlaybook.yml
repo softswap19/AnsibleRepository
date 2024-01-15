@@ -7,8 +7,8 @@
    - name: install git on ubuntu server
      apt: 
         name: "{{mygitserver}}"
-        state: present
-     
+        statee: present
+     ignore_errors: true
 
 
    - name: install wget on ubuntu server
