@@ -16,6 +16,7 @@
      apt: 
         name: "{{mygitserver}}"
         state: present
+     when: myfirsttaskresult:stderr !="" 
 
 
    - name: install wget on ubuntu server
