@@ -21,7 +21,7 @@
     apt:
         name: "{{myjdkonubuntu}}"
         state: latest
-    notify: restartwebserver  
+      
     
   
   - include_tasks: MyFile.yml
@@ -41,6 +41,7 @@
     template:
         src: Indexfile.j2
         dest: /var/www/html/index.html
+    notify: restartwebserver
     
   handlers:
      - name: restartwebserver
