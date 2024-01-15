@@ -16,6 +16,12 @@
         state: started
     when: ansible_os_family=="Debian"
 
+  - name: i want to install java11 webserver
+    service:
+        name: "{{myjdk11onubuntu}}"
+        state: present
+    when: ansible_os_family=="Debian" 
+
 
 
   
