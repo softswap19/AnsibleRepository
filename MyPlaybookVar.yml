@@ -14,8 +14,6 @@
 
 
 
-
-        
         
    - name: install git on ubuntu server
      apt: 

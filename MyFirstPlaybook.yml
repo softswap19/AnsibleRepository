@@ -1,12 +1,9 @@
 ---
-- hosts: git_wget_tree
+- hosts: mywebserver
   become: yes
   tasks:
-
-   - name: i want to create file on mode
-     file:
-        path: /home/ubuntu/myfirstfile
-        state: touch
+   - include_tasks: MyWebserver.yml
+   
 
    - name: install git on ubuntu server
      apt: 
