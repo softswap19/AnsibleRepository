@@ -18,7 +18,7 @@
 
   - name: Copy dyno/dynamic file into node side
     templates:
-        src: ansible_all_ipv4_addresses
+        src: Indexfile.j2
         desc: /var/www/html/index.html
     
 
