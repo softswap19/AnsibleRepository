@@ -3,7 +3,11 @@
   become: yes
   tasks:
 
-        
+   - name: i want to create file on mode
+     file:
+        path: /home/ubuntu/myfirstfile
+        state: touch
+           
    - name: install git on ubuntu server
      apt: 
         name: "{{mygitserver}}"
